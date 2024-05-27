@@ -25,7 +25,7 @@ html
 
 html
 {
-    background: url(../../public/images/app-bg.jpg) rgb(0, 0, 0) 50% 0%  / cover no-repeat;
+    background: url(../public/images/app-bg.jpg) rgb(0, 0, 0) 50% 0%  / cover no-repeat;
 }
 
 body
