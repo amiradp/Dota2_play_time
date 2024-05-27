@@ -21,3 +21,11 @@ def index(request):
 def result(request, pk):
     date_calculator = DateCalculator.objects.get(pk=pk)
     return render(request, 'dota/result.html', {'date_calculator': date_calculator})
+
+
+def find_dota_playtime(request):
+    return render(request, 'dota/how-to-find-dota2-playtime.html')
+   
+   
+def uninstall_dota(request):
+    return render(request, 'dota/how-to-uninstall-dota-2.html')

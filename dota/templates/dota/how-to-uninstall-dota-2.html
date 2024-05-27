@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl" >
 <head>
@@ -20,8 +22,8 @@
     <!-- SEO Title -->
     <title> آموزش حذف دوتا۲ - Better Call US</title>
     <!-- Page Styles -->
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <link rel="shortcut icon" href="../public/images/fav-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href={% static "styles/style.css" %} type="text/css">
+    <link rel="shortcut icon" href={% static "public/images/fav-icon.png" %} type="image/x-icon">
 
 </head>
 <body>
@@ -45,7 +47,7 @@
                 <li>
                     <p class="title">در سمت راست روی آیکان چرخ دنده کلیک کنید.</p>
                     <p class="description">از منوی Manage گذینه‌ی Uninstall رو انتخاب بکنید.</p>
-                    <img src="../public/images/guide-remove-dota.png" alt="پاک کردن دوتا ۲">
+                    <img src={% static "public/images/guide-remove-dota.png" %} alt="پاک کردن دوتا ۲">
                 </li><hr>
                 <!-- Step 3 -->
                 <li>
@@ -59,7 +61,7 @@
              -->
              <div class="back-links">
                 <button class="btn-alternative">
-                    <a href="index.html">
+                    <a href="{% url 'index' %}">
                         برگشت به برنامه
                     </a>
                 </button>
@@ -74,7 +76,7 @@
          -->
         <footer>
             <a href="https://github.com/bettercallus">
-                <img src="../public/images/footer.png" alt="Better Call US Footer Logo">
+                <img src={% static "public/images/footer.png" %} alt="Better Call US Footer Logo">
             </a>
         </footer>
         
